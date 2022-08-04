@@ -44,13 +44,14 @@ Run `npx begin-script` in root directory.
 Or add a script in `package.json`
 
 ```json
-scripts: {
-  "begin": "begin-script"
+{
+  scripts: {
+    "begin": "begin-script"
+  }
 }
 ```
 
 Now run `yarn begin` is good to go.
-
 
 ## License
 
