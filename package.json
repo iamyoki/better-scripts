@@ -1,0 +1,23 @@
+{
+  "name": "begin-script",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "begin-script": "bin/begin-script.js"
+  },
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "license": "MIT",
+  "description": "➤_ A User-friendly CLI to run any npm scripts with one command from \"begin\"",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "cosmiconfig": "^7.0.1",
+    "prompts": "^2.4.2",
+    "yargs": "^17.5.1"
+  }
+}
