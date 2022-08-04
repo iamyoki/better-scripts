@@ -6,7 +6,7 @@
 <br>
 
 <p align="center">
-  <img src="example.jpg" alt="logo" width="450px" />
+  <img src="https://github.com/iamyoki/begin-script/raw/main/example.jpg" alt="example" width="450px" />
 </p>
 
 - [Installation](#installation)
@@ -45,8 +45,7 @@ Or add a script in `package.json`
 
 ```json
 scripts: {
-  "begin": "begin-script",
-  ...
+  "begin": "begin-script"
 }
 ```
 
