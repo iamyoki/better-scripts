@@ -1,23 +1,28 @@
 {
   "name": "begin-script",
   "description": "➤_ A User-friendly CLI to run any npm scripts with one command from \"begin\"",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "bin": {
     "begin-script": "bin/begin-script.js"
-  },
-  "engines": {
-    "node": "^14.13.1 || >=16.0.0"
   },
   "files": [
     "bin",
     "lib"
   ],
-  "license": "MIT",
   "dependencies": {
     "chalk": "^5.0.1",
     "cosmiconfig": "^7.0.1",
     "prompts": "^2.4.2",
     "yargs": "^17.5.1"
-  }
+  },
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "author": "Yoki Yu <yokiyuqian@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamyoki/begin-script.git"
+  },
+  "license": "MIT"
 }
