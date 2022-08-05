@@ -44,17 +44,13 @@ Or add a script in `package.json`
 
 ```json
 {
-  scripts: {
+  "scripts": {
     "begin": "begin-script"
   }
 }
 ```
 
 Now run `yarn begin` is good to go.
-
-> 现在你可以把package.json里的scripts只保留begin，其他的全部干掉就完事！
->
-> 将所有脚本配置在.beginrc文件中，任何时候只需要yarn begin一行就搞定！
 
 # Advance
 
