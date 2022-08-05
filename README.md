@@ -11,7 +11,7 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Advance](#advance)
+- [Advanced](#advanced)
 - [License](#license)
 
 ## Installation
@@ -54,7 +54,7 @@ Or add a script in `package.json`
 
 Now run `yarn begin` is good to go.
 
-## Advance
+## Advanced
 
 The API is not stable yet, please check the proposal
 
