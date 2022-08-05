@@ -1,7 +1,7 @@
 {
   "name": "begin-script",
   "description": "➤_ A User-friendly CLI to run any npm scripts with one command from \"begin\"",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "bin": {
     "begin-script": "bin/begin-script.js"
@@ -16,6 +16,16 @@
     "prompts": "^2.4.2",
     "yargs": "^17.5.1"
   },
+  "keywords": [
+    "cli",
+    "command",
+    "commandline",
+    "tool",
+    "npm",
+    "npm-scripts",
+    "run",
+    "task"
+  ],
   "engines": {
     "node": "^14.13.1 || >=16.0.0"
   },
