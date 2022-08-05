@@ -58,8 +58,8 @@ Now run `yarn begin` is good to go.
 
 The API is not stable yet, please check the proposal
 
-- [Commands](./proposal/commands.md)
-- [Configuration](./proposal/config.md)
+- [Commands](https://github.com/iamyoki/begin-script/blob/main/proposal/commands.md)
+- [Configuration](https://github.com/iamyoki/begin-script/blob/main/proposal/config.md)
 
 ## License
 
