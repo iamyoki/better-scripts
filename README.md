@@ -9,8 +9,10 @@
   <img src="https://github.com/iamyoki/begin-script/raw/main/example.jpg" alt="example" width="450px" />
 </p>
 
+- [Installation](#installation)
+- [Usage](#usage)
 - [Advance](#advance)
-  - [License](#license)
+- [License](#license)
 
 ## Installation
 
@@ -52,7 +54,7 @@ Or add a script in `package.json`
 
 Now run `yarn begin` is good to go.
 
-# Advance
+## Advance
 
 The API is not stable yet, please check the proposal
 
