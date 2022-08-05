@@ -7,12 +7,6 @@ import {defaultCommand} from '../lib/commands/defaultCommand.js';
 import {listCommand} from '../lib/commands/listCommand.js';
 import {getPkg} from '../lib/getPkg.js';
 
-process.on('uncaughtException', err => {
-  console.log(chalk.bgRed.bold(err.name))
-  console.error(chalk.red(err.message))
-  process.exit(1)
-});
-
 const pkg = getPkg();
 
 const argv = yargs(hideBin(process.argv))
@@ -27,4 +21,12 @@ const argv = yargs(hideBin(process.argv))
   .alias('help', 'h')
   .alias('version', 'v')
   .command('$0', 'Begin to run', {}, defaultCommand)
-  .command('list', 'Show task list', {}, listCommand).argv;
+  .command('list', 'Show task list', {}, listCommand)
+  .fail((msg, err, yargs) => {
+    if (err) {
+      console.error(chalk.bgRed.bold(err.name));
+      console.error(chalk.red(err.message));
+      // console.error(chalk.red(err.stack));
+      process.exit(1);
+    }
+  }).argv;
