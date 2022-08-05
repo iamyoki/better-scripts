@@ -1,7 +1,7 @@
 {
   "name": "begin-script",
   "description": "➤_ A User-friendly CLI to run any npm scripts with one command from \"begin\"",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "bin": {
     "begin-script": "bin/begin-script.js"
