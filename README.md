@@ -72,7 +72,9 @@ Now, let's add move all `scripts` into `better-scripts` and add only one `"scrip
 
 Then run `yarn scripts` will read your scripts from `better-scripts`
 
-`yarn scripts`
+```sh
+yarn scripts
+```
 
 ### Add script description
 
