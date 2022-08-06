@@ -1,0 +1,12 @@
+{
+  "dev": "echo dev",
+  "build": {
+    "alias": "📦 Build",
+    "command": "echo build succeed!",
+    "desc": "Create a production build",
+    "scripts": {
+      "zip": "echo zip done!",
+      "gzip": "echo zip done!"
+    }
+  }
+}
