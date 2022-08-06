@@ -16,6 +16,10 @@
   - [Script as object](#script-as-object)
   - [Separate configuration file](#separate-configuration-file)
   - [Specified configuration file](#specified-configuration-file)
+- [Command line](#command-line)
+  - [Default](#default)
+  - [Run](#run)
+  - [List](#list)
 - [Advanced](#advanced)
 - [License](#license)
 
@@ -148,6 +152,73 @@ Supported file formats
 
 ```sh
 yarn scripts --config custom-config.json
+```
+
+## Command line
+
+```sh
+yarn scripts --help
+
+➤_ A better way to organize your npm scripts
+
+Commands:
+  better-scripts              Run your script  [default]
+  better-scripts run <name>   Run script non-interactive, usually in CI mode
+  better-scripts list [name]  Show all scripts
+
+Options:
+  -v, --version  Show version number  [boolean]
+  -c, --config   Specified config filepath  [string]
+      --track    Show tracked error stack message
+  -h, --help     Show help  [boolean]
+
+Examples:
+  npx better-scripts                   - Run your script interactive
+  npx better-scripts run dev           - Run "dev" script non-interactive
+  npx better-scripts run build.deploy  - Run "build" and "deploy" child script in chain order
+  npx better-scripts list              - Show all scripts
+```
+
+### Default
+
+Interactive with one simple command
+
+```sh
+yarn scripts
+```
+
+### Run
+
+Non-interactive with specific command
+
+```sh
+yarn scripts run <name>
+```
+
+> `<name>` is your script name that defined in config
+
+Chain operaton
+
+```sh
+yarn scripts run <name.name...>
+```
+
+### List
+
+Show all your scripts
+
+```sh
+yarn scripts list
+```
+
+Show specific script name's scripts
+
+```sh
+yarn script list <name>
+```
+
+```sh
+yarn scripts list <name.name...>
 ```
 
 ## Advanced
