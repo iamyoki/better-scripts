@@ -5,9 +5,17 @@ import yargs from 'yargs';
 import {hideBin} from 'yargs/helpers';
 import {defaultCommand} from '../lib/commands/defaultCommand.js';
 import {listCommand} from '../lib/commands/listCommand.js';
+import {errorHandler} from '../lib/errorHandler.js';
 import {getPkg} from '../lib/getPkg.js';
 
 const pkg = getPkg();
+
+process.on('uncaughtException', errorHandler);
+process.on('unhandledRejection', errorHandler);
+
+if (hideBin(process.argv).includes('--track')) {
+  process.env.TRACK_ERROR = 'true';
+}
 
 const argv = yargs(hideBin(process.argv))
   .usage(chalk.magenta('\n' + pkg.description))
@@ -16,17 +24,17 @@ const argv = yargs(hideBin(process.argv))
     desc: 'Specified config filepath',
     type: 'string'
   })
-  .example('npx $0')
+  .option('track', {
+    desc: 'Show tracked error stack message'
+  })
   .help('help')
   .alias('help', 'h')
   .alias('version', 'v')
   .command('$0', 'Run your script', {}, defaultCommand)
-  .command('list', 'Show all scripts', {}, listCommand)
+  .command('list [name]', 'Show all scripts', {}, listCommand)
+  .strict(true)
+  .example('npx $0')
   .fail((msg, err, yargs) => {
-    if (err) {
-      console.error(chalk.bgRed.bold(err.name));
-      console.error(chalk.red(err.message));
-      // console.error(chalk.red(err.stack));
-      process.exit(1);
-    }
+    if (err) throw err; // preserve stack
+    if (msg) throw new Error(msg);
   }).argv;
