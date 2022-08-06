@@ -1,10 +1,10 @@
 {
-  "name": "begin-script",
-  "description": "➤_ A User-friendly CLI to run any npm scripts with one command from \"begin\"",
-  "version": "0.0.11",
+  "name": "better-scripts",
+  "description": "➤_ A better way to organize your npm scripts",
+  "version": "0.0.0",
   "type": "module",
   "bin": {
-    "begin-script": "bin/begin-script.js"
+    "better-scripts": "bin/better-scripts.js"
   },
   "files": [
     "bin",
@@ -33,7 +33,7 @@
   "author": "Yoki Yu <yokiyuqian@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamyoki/begin-script.git"
+    "url": "https://github.com/iamyoki/better-scripts.git"
   },
   "license": "MIT"
 }
