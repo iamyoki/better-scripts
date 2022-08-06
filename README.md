@@ -6,7 +6,7 @@
 <br>
 
 <p align="center">
-  <img src="./readme/example2.png" alt="example" width="460px" />
+  <img src="./static/example2.png" alt="example" width="460px" />
 </p>
 
 - [Installation](#installation)
@@ -56,7 +56,7 @@ npx better-scripts
 ```
 
 <p align="center">
-  <img src="./readme/example-at-first.png" alt="example-at-first" width="400px">
+  <img src="./static/example-at-first.png" alt="example-at-first" width="400px">
 </p>
 
 Now, let's add move all `scripts` into `better-scripts` and add only one `"scripts": "better-scripts"` in `scripts`
@@ -93,7 +93,7 @@ Second value as description in array form
 ```
 
 <p align="center">
-  <img src="./readme/example-yarn.png" alt="example-at-first" width="400px">
+  <img src="./static/example-yarn.png" alt="example-at-first" width="400px">
 </p>
 
 ### Script as object
@@ -113,7 +113,7 @@ You can add more properties in object form
 ```
 
 <p align="center">
-  <img src="./readme/example-alias.png" alt="example-at-first" width="400px">
+  <img src="./static/example-alias.png" alt="example-at-first" width="400px">
 </p>
 
 ### Separate configuration file
