@@ -1,19 +1,19 @@
-type TaskArrayForm1 = [script: string, options?: TaskObjectForm];
-type TaskArrayForm2 = [script: string, description: string, options?: TaskObjectForm];
-type TaskArrayForm3 = [name: string, script: string, description: string, options?: TaskObjectForm];
-type TaskObjectForm = {
-  id: number | string;
-  name?: string;
+export type ScriptObject = {
+  alias?: string;
   script: string;
-  description?: string;
   desc?: string;
+  scripts?: Script[];
   env?: {
-    [k: string]: string;
+    [key: string]: string;
   };
-  tasks?: Task[]
 };
-type Task = TaskArrayForm1 | TaskArrayForm2 | TaskArrayForm3 | TaskObjectForm;
 
-export interface BeginConfig {
-  tasks: Task[];
+export type Script = string | [script: string, desc: string] | ScriptObject;
+
+export interface Config {
+  [name: string]: Script;
+}
+
+export interface ParsedConfig {
+  [name: string]: ScriptObject;
 }
