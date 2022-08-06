@@ -1,19 +1,19 @@
-export type ScriptObject = {
+export type ScriptObjectValue = {
   alias?: string;
-  script: string;
+  command: string;
   desc?: string;
-  scripts?: Script[];
+  scripts?: ScriptValue[];
   env?: {
     [key: string]: string;
   };
 };
 
-export type Script = string | [script: string, desc: string] | ScriptObject;
+export type ScriptValue = string | [script: string, desc: string] | ScriptObjectValue;
 
 export interface Config {
-  [name: string]: Script;
+  [name: string]: ScriptValue;
 }
 
 export interface ParsedConfig {
-  [name: string]: ScriptObject;
+  [name: string]: ScriptObjectValue;
 }
