@@ -1,14 +1,15 @@
 {
   "name": "better-scripts",
   "description": "➤_ A better way to organize your npm scripts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "bin": {
     "better-scripts": "bin/better-scripts.js"
   },
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "!readme"
   ],
   "dependencies": {
     "chalk": "^5.0.1",
