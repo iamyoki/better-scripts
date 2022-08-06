@@ -15,7 +15,7 @@
   - [Add script description](#add-script-description)
   - [Script as object](#script-as-object)
   - [Separate configuration file](#separate-configuration-file)
-  - [Specifity configuration file](#specifity-configuration-file)
+  - [Specified configuration file](#specified-configuration-file)
 - [Advanced](#advanced)
 - [License](#license)
 
@@ -144,7 +144,7 @@ Supported file formats
 - `better-scriptsrc.config.js`
 - `better-scriptsrc.config.cjs`
 
-### Specifity configuration file
+### Specified configuration file
 
 ```sh
 yarn scripts --config custom-config.json
