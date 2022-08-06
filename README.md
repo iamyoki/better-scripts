@@ -55,6 +55,10 @@ Simply run `npx better-scripts` will read your existing scripts, let's give it t
 npx better-scripts
 ```
 
+<p align="center">
+  <img src="./readme/example-at-first.png" alt="example-at-first" width="400px">
+</p>
+
 Now, let's add move all `scripts` into `better-scripts` and add only one `"scripts": "better-scripts"` in `scripts`
 
 ```json
@@ -86,6 +90,10 @@ yarn scripts
 }
 ```
 
+<p align="center">
+  <img src="./readme/example-yarn.png" alt="example-at-first" width="400px">
+</p>
+
 ### Script as object
 
 ```json
@@ -99,6 +107,10 @@ yarn scripts
   }
 }
 ```
+
+<p align="center">
+  <img src="./readme/example-alias.png" alt="example-at-first" width="400px">
+</p>
 
 ### Separate configuration file
 
