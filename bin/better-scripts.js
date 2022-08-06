@@ -5,6 +5,7 @@ import yargs from 'yargs';
 import {hideBin} from 'yargs/helpers';
 import {defaultCommand} from '../lib/commands/defaultCommand.js';
 import {listCommand} from '../lib/commands/listCommand.js';
+import {runCommand} from '../lib/commands/runCommand.js';
 import {errorHandler} from '../lib/errorHandler.js';
 import {getPkg} from '../lib/getPkg.js';
 
@@ -31,10 +32,25 @@ const argv = yargs(hideBin(process.argv))
   .alias('help', 'h')
   .alias('version', 'v')
   .command('$0', 'Run your script', {}, defaultCommand)
+  .command(
+    'run <name>',
+    'Run script non-interactive, usually in CI mode',
+    {},
+    runCommand
+  )
   .command('list [name]', 'Show all scripts', {}, listCommand)
+  .example('npx $0', '- Run your script interactive')
+  .example('npx $0 run dev', '- Run "dev" script non-interactive')
+  .example('npx $0 run build.deploy', '- Run "build" and "deploy" child script in chain order')
+  .example('npx $0 list', '- Show all scripts')
+  // .example('npx $0 list a', "- List by script name")
+  // .example('npx $0 list a.b', '- List by object key chain')
   .strict(true)
-  .example('npx $0')
+  .wrap(yargs.terminalWidth)
   .fail((msg, err, yargs) => {
     if (err) throw err; // preserve stack
-    if (msg) throw new Error(msg);
+    if (msg) {
+      console.log(yargs.help() + '\n');
+      throw new Error(msg);
+    }
   }).argv;
