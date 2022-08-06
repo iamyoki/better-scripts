@@ -1,6 +1,8 @@
 <br />
 <h1 align="center">➤_ Begin Script</h1>
 
+> 🚨 DEPRECATED: this package has been renamed to better-scripts, see [better-scripts](https://www.npmjs.com/package/better-scripts).
+
 <br>
 <p align="center"><strong>A User-friendly CLI to run any npm scripts with one command from "begin"</strong></p>
 <br>
