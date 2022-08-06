@@ -82,6 +82,8 @@ yarn scripts
 
 ### Add script description
 
+Second value as description in array form
+
 ```json
 {
   "better-scripts": {
@@ -95,6 +97,8 @@ yarn scripts
 </p>
 
 ### Script as object
+
+You can add more properties in object form
 
 ```json
 {
