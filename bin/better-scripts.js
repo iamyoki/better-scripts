@@ -13,15 +13,15 @@ const argv = yargs(hideBin(process.argv))
   .usage(chalk.magenta('\n' + pkg.description))
   .option('config', {
     alias: 'c',
-    desc: 'Specified config filepath.\nDefaults to ".beginrc"',
+    desc: 'Specified config filepath',
     type: 'string'
   })
-  .example('npx $0', 'Begin to run')
+  .example('npx $0')
   .help('help')
   .alias('help', 'h')
   .alias('version', 'v')
-  .command('$0', 'Begin to run', {}, defaultCommand)
-  .command('list', 'Show task list', {}, listCommand)
+  .command('$0', 'Run your script', {}, defaultCommand)
+  .command('list', 'Show all scripts', {}, listCommand)
   .fail((msg, err, yargs) => {
     if (err) {
       console.error(chalk.bgRed.bold(err.name));
