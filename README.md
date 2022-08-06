@@ -59,7 +59,7 @@ npx better-scripts
   <img src="./static/example-at-first.png" alt="example-at-first" width="400px">
 </p>
 
-Now, let's add move all `scripts` into `better-scripts` and add only one `"scripts": "better-scripts"` in `scripts`
+Now, let's move all `scripts` into `better-scripts` and add only one `"scripts": "better-scripts"` in `scripts`
 
 ```json
 {
