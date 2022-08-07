@@ -1,0 +1,69 @@
+{
+  "$ref": "#/definitions/Config",
+  "description": "The shape of user's config file",
+  "definitions": {
+    "Config": {
+      "description": "The shape of user's config file",
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/ScriptValue"
+      }
+    },
+    "ScriptValue": {
+      "description": "Script value, can be either string, array or object",
+      "anyOf": [
+        {
+          "description": "Script array form value",
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        {
+          "$ref": "#/definitions/ScriptObjectValue",
+          "description": "Script object form value"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "ScriptObjectValue": {
+      "description": "Script object form value",
+      "type": "object",
+      "properties": {
+        "alias": {
+          "description": "Aliase displayed in place of script name, for emoji purpose",
+          "type": "string"
+        },
+        "command": {
+          "description": "Command to execute",
+          "type": "string"
+        },
+        "desc": {
+          "description": "Description for the script",
+          "type": "string"
+        },
+        "scripts": {
+          "$ref": "#/definitions/Config",
+          "description": "Child scripts that need to be prompts after"
+        },
+        "env": {
+          "description": "Set environment variables for the script",
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

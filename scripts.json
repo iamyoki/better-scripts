@@ -1,4 +1,11 @@
 {
+  "$schema": "./lib/schema.json",
+  "//": "",
+  "generate-schema": {
+    "alias": "📄 Generate Schema",
+    "desc": "Generate json schema file",
+    "command": "node scripts/generate-jsonschema.js"
+  },
   "dev": "echo dev",
   "build": {
     "alias": "📦 Build",

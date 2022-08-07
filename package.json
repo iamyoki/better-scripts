@@ -9,9 +9,6 @@
   "scripts": {
     "scripts": "better-scripts"
   },
-  "better-scripts": {
-    "dev": "echo dev"
-  },
   "files": [
     "bin",
     "lib"
@@ -42,5 +39,8 @@
     "type": "git",
     "url": "https://github.com/iamyoki/better-scripts.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript-json-schema": "^0.54.0"
+  }
 }
