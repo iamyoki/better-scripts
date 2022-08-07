@@ -9,6 +9,9 @@
   "scripts": {
     "scripts": "better-scripts"
   },
+  "better-scripts": {
+    "dev": "echo dev"
+  },
   "files": [
     "bin",
     "lib"
