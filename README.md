@@ -214,7 +214,7 @@ yarn scripts list
 Show specific script name's scripts
 
 ```sh
-yarn script list <name>
+yarn scripts list <name>
 ```
 
 ```sh

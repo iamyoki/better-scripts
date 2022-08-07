@@ -17,6 +17,7 @@
     "chalk": "^5.0.1",
     "cli-table3": "^0.6.2",
     "cosmiconfig": "^7.0.1",
+    "pkg-dir": "^6.0.1",
     "prompts": "^2.4.2",
     "yargs": "^17.5.1"
   },
