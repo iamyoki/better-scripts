@@ -1,19 +1,8 @@
 {
   "$schema": "./lib/schema.json",
-  "//": "",
   "generate-schema": {
     "alias": "📄 Generate Schema",
     "desc": "Generate json schema file",
     "command": "node scripts/generate-jsonschema.js"
-  },
-  "dev": "echo dev",
-  "build": {
-    "alias": "📦 Build",
-    "command": "echo build succeed!",
-    "desc": "Create a production build",
-    "scripts": {
-      "zip": "echo zip done!",
-      "gzip": "echo zip done!"
-    }
   }
 }
