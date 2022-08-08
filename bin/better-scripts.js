@@ -38,11 +38,24 @@ const argv = yargs(hideBin(process.argv))
     {},
     runCommand
   )
-  .command('list [name]', 'Show all scripts', {}, listCommand)
+  .command(
+    'list [name]',
+    'Show all scripts in table',
+    {
+      compact: {
+        desc: 'Compact mode',
+        boolean: true,
+      }
+    },
+    listCommand
+  )
   .example('npx $0', '- Run your script interactive')
   .example('npx $0 run dev', '- Run "dev" script non-interactive')
-  .example('npx $0 run build.deploy', '- Run "build" and "deploy" child script in chain order')
-  .example('npx $0 list', '- Show all scripts')
+  .example(
+    'npx $0 run build.deploy',
+    '- Run "build" and "deploy" child script in chain order'
+  )
+  .example('npx $0 list', '- Show all scripts in table')
   // .example('npx $0 list a', "- List by script name")
   // .example('npx $0 list a.b', '- List by object key chain')
   .strict(true)
