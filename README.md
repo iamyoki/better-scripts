@@ -109,7 +109,7 @@ You can add more properties in object form
   "better-scripts": {
     "dev": {
       "alias": "🧑🏻‍💻 Dev",
-      "script": "react-scripts start",
+      "command": "react-scripts start",
       "desc": "Start a development server"
     }
   }
