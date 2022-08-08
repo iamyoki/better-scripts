@@ -7,7 +7,7 @@
     "better-scripts": "bin/better-scripts.js"
   },
   "scripts": {
-    "scripts": "better-scripts"
+    "scripts": "./bin/better-scripts.js"
   },
   "files": [
     "bin",
