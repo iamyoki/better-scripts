@@ -4,16 +4,5 @@
     "alias": "📄 Generate Schema",
     "desc": "Generate json schema file",
     "command": "node scripts/generate-jsonschema.js"
-  },
-  "a": {
-    "scripts": {
-      "b": {
-        "scripts": {
-          "c": {
-            "command": "d"
-          }
-        }
-      }
-    }
   }
 }
