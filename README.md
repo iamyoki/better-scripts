@@ -53,7 +53,7 @@ npx better-scripts
 
 ### Basic setup
 
-Simply run `npx better-scripts` will read your existing scripts, let's give it try at first
+Simply run `npx better-scripts` will read your existing scripts, let's give it a try at first
 
 ```sh
 npx better-scripts
@@ -197,11 +197,19 @@ yarn scripts run <name>
 
 > `<name>` is your script name that defined in config
 
-Chain operaton
+Chain operation
 
 ```sh
 yarn scripts run <name.name...>
 ```
+
+Skip chaining paths
+
+```sh
+yarn scripts run <name.name...> --skip
+```
+
+> -s, --skip
 
 ### List
 
@@ -209,6 +217,12 @@ Show all your scripts
 
 ```sh
 yarn scripts list
+```
+
+Compact mode
+
+```sh
+yarn scripts list --compact
 ```
 
 Show specific script name's scripts
