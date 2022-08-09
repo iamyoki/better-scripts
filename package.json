@@ -1,7 +1,7 @@
 {
   "name": "better-scripts",
   "description": "➤_ A better way to organize your npm scripts",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "type": "module",
   "bin": {
     "better-scripts": "bin/better-scripts.js"
