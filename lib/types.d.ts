@@ -6,8 +6,8 @@ export interface Script {
   command?: string;
   desc?: string;
   scripts?: {[key: string]: Script};
-  prescript?: Script;
-  postscript?: Script;
+  prescript?: Pick<Script, 'name' | 'command' | 'desc'>;
+  postscript?: Pick<Script, 'name' | 'command' | 'desc'>;
   env?: {
     [key: string]: string;
   };
