@@ -62,8 +62,6 @@ const argv = yargs(hideBin(process.argv))
     '- Run "build" and "deploy" child script in chain order'
   )
   .example('npx $0 list', '- Show all scripts in table')
-  // .example('npx $0 list a', "- List by script name")
-  // .example('npx $0 list a.b', '- List by object key chain')
   .strict(true)
   .wrap(yargs.terminalWidth)
   .fail((msg, err, yargs) => {

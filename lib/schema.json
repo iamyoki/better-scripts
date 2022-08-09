@@ -1,94 +1,6 @@
 {
   "$ref": "#/definitions/UserConfig",
   "definitions": {
-    "Omit<Script,\"name\"|\"scripts\">": {
-      "type": "object",
-      "properties": {
-        "desc": {
-          "type": "string"
-        },
-        "alias": {
-          "type": "string"
-        },
-        "command": {
-          "type": "string"
-        },
-        "prescript": {
-          "$ref": "#/definitions/Script"
-        },
-        "postscript": {
-          "$ref": "#/definitions/Script"
-        },
-        "prescripts": {
-          "type": "object",
-          "additionalProperties": {
-            "$ref": "#/definitions/Script"
-          }
-        },
-        "postscripts": {
-          "type": "object",
-          "additionalProperties": {
-            "$ref": "#/definitions/Script"
-          }
-        },
-        "env": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
-        }
-      }
-    },
-    "Script": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "alias": {
-          "type": "string"
-        },
-        "command": {
-          "type": "string"
-        },
-        "desc": {
-          "type": "string"
-        },
-        "scripts": {
-          "type": "object",
-          "additionalProperties": {
-            "$ref": "#/definitions/Script"
-          }
-        },
-        "prescript": {
-          "$ref": "#/definitions/Script"
-        },
-        "postscript": {
-          "$ref": "#/definitions/Script"
-        },
-        "prescripts": {
-          "type": "object",
-          "additionalProperties": {
-            "$ref": "#/definitions/Script"
-          }
-        },
-        "postscripts": {
-          "type": "object",
-          "additionalProperties": {
-            "$ref": "#/definitions/Script"
-          }
-        },
-        "env": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "name"
-      ]
-    },
     "UserConfig": {
       "type": "object",
       "additionalProperties": {
@@ -107,14 +19,7 @@
             "maxItems": 2
           },
           {
-            "allOf": [
-              {
-                "$ref": "#/definitions/Omit<Script,\"name\"|\"scripts\">"
-              },
-              {
-                "$ref": "#/definitions/{description?:string;describe?:string;scripts?:UserConfig;}"
-              }
-            ]
+            "$ref": "#/definitions/{alias?:string;command?:string;desc?:string;description?:string;describe?:string;scripts?:UserConfig;prescript?:{command?:string;desc?:string;description?:string;describe?:string;};postscript?:{command?:string;desc?:string;description?:string;describe?:string;};env?:{[key:string]:string;};}"
           },
           {
             "type": "string"
@@ -122,9 +27,18 @@
         ]
       }
     },
-    "{description?:string;describe?:string;scripts?:UserConfig;}": {
+    "{alias?:string;command?:string;desc?:string;description?:string;describe?:string;scripts?:UserConfig;prescript?:{command?:string;desc?:string;description?:string;describe?:string;};postscript?:{command?:string;desc?:string;description?:string;describe?:string;};env?:{[key:string]:string;};}": {
       "type": "object",
       "properties": {
+        "alias": {
+          "type": "string"
+        },
+        "command": {
+          "type": "string"
+        },
+        "desc": {
+          "type": "string"
+        },
         "description": {
           "type": "string"
         },
@@ -133,6 +47,46 @@
         },
         "scripts": {
           "$ref": "#/definitions/UserConfig"
+        },
+        "prescript": {
+          "type": "object",
+          "properties": {
+            "command": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "describe": {
+              "type": "string"
+            }
+          }
+        },
+        "postscript": {
+          "type": "object",
+          "properties": {
+            "command": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "describe": {
+              "type": "string"
+            }
+          }
+        },
+        "env": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       }
     }
