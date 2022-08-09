@@ -35,7 +35,13 @@ const argv = yargs(hideBin(process.argv))
   .command(
     'run <name>',
     'Run script non-interactive, usually in CI mode',
-    {},
+    {
+      skip: {
+        alias: 's',
+        desc: 'Skip the chaining paths',
+        boolean: true
+      }
+    },
     runCommand
   )
   .command(
@@ -44,7 +50,7 @@ const argv = yargs(hideBin(process.argv))
     {
       compact: {
         desc: 'Compact mode',
-        boolean: true,
+        boolean: true
       }
     },
     listCommand

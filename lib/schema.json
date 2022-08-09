@@ -55,6 +55,14 @@
           "$ref": "#/definitions/Config",
           "description": "Child scripts that need to be prompts after"
         },
+        "prescript": {
+          "description": "Prescript must be a pre(name) of an existing script (name)",
+          "type": "string"
+        },
+        "postscript": {
+          "description": "Postscript must be a post(name) of an existing script (name)",
+          "type": "string"
+        },
         "env": {
           "description": "Set environment variables for the script",
           "type": "object",
