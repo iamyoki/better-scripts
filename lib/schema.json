@@ -1,74 +1,138 @@
 {
-  "$ref": "#/definitions/Config",
-  "description": "The shape of user's config file",
+  "$ref": "#/definitions/UserConfig",
   "definitions": {
-    "Config": {
-      "description": "The shape of user's config file",
-      "type": "object",
-      "additionalProperties": {
-        "$ref": "#/definitions/ScriptValue"
-      }
-    },
-    "ScriptValue": {
-      "description": "Script value, can be either string, array or object",
-      "anyOf": [
-        {
-          "description": "Script array form value",
-          "type": "array",
-          "items": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "string"
-            }
-          ],
-          "minItems": 2,
-          "maxItems": 2
-        },
-        {
-          "$ref": "#/definitions/ScriptObjectValue",
-          "description": "Script object form value"
-        },
-        {
-          "type": "string"
-        }
-      ]
-    },
-    "ScriptObjectValue": {
-      "description": "Script object form value",
+    "Omit<Script,\"name\"|\"scripts\">": {
       "type": "object",
       "properties": {
+        "desc": {
+          "type": "string"
+        },
         "alias": {
-          "description": "Aliase displayed in place of script name, for emoji purpose",
           "type": "string"
         },
         "command": {
-          "description": "Command to execute",
           "type": "string"
-        },
-        "desc": {
-          "description": "Description for the script",
-          "type": "string"
-        },
-        "scripts": {
-          "$ref": "#/definitions/Config",
-          "description": "Child scripts that need to be prompts after"
         },
         "prescript": {
-          "description": "Prescript must be a pre(name) of an existing script (name)",
-          "type": "string"
+          "$ref": "#/definitions/Script"
         },
         "postscript": {
-          "description": "Postscript must be a post(name) of an existing script (name)",
-          "type": "string"
+          "$ref": "#/definitions/Script"
+        },
+        "prescripts": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Script"
+          }
+        },
+        "postscripts": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Script"
+          }
         },
         "env": {
-          "description": "Set environment variables for the script",
           "type": "object",
           "additionalProperties": {
             "type": "string"
           }
+        }
+      }
+    },
+    "Script": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "alias": {
+          "type": "string"
+        },
+        "command": {
+          "type": "string"
+        },
+        "desc": {
+          "type": "string"
+        },
+        "scripts": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Script"
+          }
+        },
+        "prescript": {
+          "$ref": "#/definitions/Script"
+        },
+        "postscript": {
+          "$ref": "#/definitions/Script"
+        },
+        "prescripts": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Script"
+          }
+        },
+        "postscripts": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/Script"
+          }
+        },
+        "env": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "UserConfig": {
+      "type": "object",
+      "additionalProperties": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          },
+          {
+            "allOf": [
+              {
+                "$ref": "#/definitions/Omit<Script,\"name\"|\"scripts\">"
+              },
+              {
+                "$ref": "#/definitions/{description?:string;describe?:string;scripts?:UserConfig;}"
+              }
+            ]
+          },
+          {
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "{description?:string;describe?:string;scripts?:UserConfig;}": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "describe": {
+          "type": "string"
+        },
+        "scripts": {
+          "$ref": "#/definitions/UserConfig"
         }
       }
     }

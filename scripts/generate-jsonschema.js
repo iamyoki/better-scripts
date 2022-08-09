@@ -11,7 +11,7 @@ const program = TJS.getProgramFromFiles([
   path.resolve(__dirname, '../lib/types.d.ts')
 ]);
 
-const schema = TJS.generateSchema(program, 'Config', {required: true});
+const schema = TJS.generateSchema(program, 'UserConfig', {required: true});
 
 const filename = path.join(__dirname, '../lib', 'schema.json')
 
