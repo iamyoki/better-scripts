@@ -1,5 +1,40 @@
 {
   "$schema": "./lib/schema.json",
+  "dev": {
+    "alias": "🌟 Dev",
+    "desc": "Watch build for dev",
+    "command": "tsc -p . --module commonjs --outDir ./dist/cjs --incremental --declaration --sourceMap --watch",
+    "prescript": {
+      "command": "yarn scripts run clean"
+    }
+  },
+  "builds": {
+    "alias": "📦 Builds",
+    "scripts": {
+      "preall": "yarn scripts run clean",
+      "all": [
+        "yarn scripts run builds.cjs && yarn scripts run builds.esm && yarn scripts run builds.types",
+        "Build ts and types"
+      ],
+      "cjs": [
+        "tsc -p . --module commonjs --outDir ./dist/cjs",
+        "Build into commonjs"
+      ],
+      "esm": [
+        "tsc -p . --module esnext --outDir ./dist/esm",
+        "Build into esmodule"
+      ],
+      "types": [
+        "tsc -p . --declaration --emitDeclarationOnly --outDir ./dist/types",
+        "Build types only"
+      ]
+    }
+  },
+  "clean": {
+    "alias": "🧹 Clean",
+    "desc": "Clean previous dist before build",
+    "command": "rimraf dist"
+  },
   "generate-schema": {
     "alias": "📄 Generate Schema",
     "command": "node scripts/generate-jsonschema.js",
