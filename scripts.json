@@ -2,7 +2,12 @@
   "$schema": "./lib/schema.json",
   "generate-schema": {
     "alias": "📄 Generate Schema",
-    "desc": "Generate json schema file",
-    "command": "node scripts/generate-jsonschema.js"
+    "command": "node scripts/generate-jsonschema.js",
+    "desc": "Generate json schema file"
+  },
+  "sort-config": {
+    "alias": "🔮 Sort Config",
+    "command": "node scripts/sort-scripts-config.js",
+    "desc": "Sort and format scripts config"
   }
 }
