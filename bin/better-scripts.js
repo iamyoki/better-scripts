@@ -63,7 +63,7 @@ const argv = yargs(hideBin(process.argv))
   )
   .example('npx $0 list', '- Show all scripts in table')
   .strict(true)
-  .wrap(yargs.terminalWidth)
+  .wrap(null)
   .fail((msg, err, yargs) => {
     if (err) throw err; // preserve stack
     if (msg) {
