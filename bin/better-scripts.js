@@ -31,10 +31,10 @@ const argv = yargs(hideBin(process.argv))
   .help('help')
   .alias('help', 'h')
   .alias('version', 'v')
-  .command('$0', 'Run your script', {}, defaultCommand)
+  .command('$0', 'Run script interactively', {}, defaultCommand)
   .command(
     'run <name>',
-    'Run script non-interactive, usually in CI mode',
+    'Run script imperatively',
     {
       skip: {
         alias: 's',
