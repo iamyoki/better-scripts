@@ -45,7 +45,7 @@ const argv = yargs(hideBin(process.argv))
     runCommand
   )
   .command(
-    'list [name]',
+    ['list [name]', 'ls [name]'],
     'Show all scripts in table',
     {
       compact: {
