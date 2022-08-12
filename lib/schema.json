@@ -19,7 +19,7 @@
             "maxItems": 2
           },
           {
-            "$ref": "#/definitions/{alias?:string;command?:string;desc?:string;description?:string;describe?:string;scripts?:UserConfig;prescript?:{command?:string;desc?:string;description?:string;describe?:string;};postscript?:{command?:string;desc?:string;description?:string;describe?:string;};env?:{[key:string]:string;};}"
+            "$ref": "#/definitions/{alias?:string;command?:string;desc?:string;description?:string;describe?:string;scripts?:UserConfig;prescript?:Valueof<UserConfig>;postscript?:Valueof<UserConfig>;env?:{[key:string]:string;};}"
           },
           {
             "type": "string"
@@ -27,7 +27,7 @@
         ]
       }
     },
-    "{alias?:string;command?:string;desc?:string;description?:string;describe?:string;scripts?:UserConfig;prescript?:{command?:string;desc?:string;description?:string;describe?:string;};postscript?:{command?:string;desc?:string;description?:string;describe?:string;};env?:{[key:string]:string;};}": {
+    "{alias?:string;command?:string;desc?:string;description?:string;describe?:string;scripts?:UserConfig;prescript?:Valueof<UserConfig>;postscript?:Valueof<UserConfig>;env?:{[key:string]:string;};}": {
       "type": "object",
       "properties": {
         "alias": {
@@ -49,38 +49,50 @@
           "$ref": "#/definitions/UserConfig"
         },
         "prescript": {
-          "type": "object",
-          "properties": {
-            "command": {
-              "type": "string"
+          "anyOf": [
+            {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "minItems": 2,
+              "maxItems": 2
             },
-            "desc": {
-              "type": "string"
+            {
+              "$ref": "#/definitions/{alias?:string;command?:string;desc?:string;description?:string;describe?:string;scripts?:UserConfig;prescript?:Valueof<UserConfig>;postscript?:Valueof<UserConfig>;env?:{[key:string]:string;};}"
             },
-            "description": {
-              "type": "string"
-            },
-            "describe": {
+            {
               "type": "string"
             }
-          }
+          ]
         },
         "postscript": {
-          "type": "object",
-          "properties": {
-            "command": {
-              "type": "string"
+          "anyOf": [
+            {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "minItems": 2,
+              "maxItems": 2
             },
-            "desc": {
-              "type": "string"
+            {
+              "$ref": "#/definitions/{alias?:string;command?:string;desc?:string;description?:string;describe?:string;scripts?:UserConfig;prescript?:Valueof<UserConfig>;postscript?:Valueof<UserConfig>;env?:{[key:string]:string;};}"
             },
-            "description": {
-              "type": "string"
-            },
-            "describe": {
+            {
               "type": "string"
             }
-          }
+          ]
         },
         "env": {
           "type": "object",

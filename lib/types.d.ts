@@ -6,8 +6,8 @@ export interface Script {
   command?: string;
   desc?: string;
   scripts?: {[key: string]: Script};
-  prescript?: Pick<Script, 'name' | 'command' | 'desc'>;
-  postscript?: Pick<Script, 'name' | 'command' | 'desc'>;
+  prescript?: Script;
+  postscript?: Script;
   env?: {
     [key: string]: string;
   };
@@ -24,18 +24,8 @@ export interface UserConfig {
         description?: string;
         describe?: string;
         scripts?: UserConfig;
-        prescript?: {
-          command?: string;
-          desc?: string;
-          description?: string;
-          describe?: string;
-        };
-        postscript?: {
-          command?: string;
-          desc?: string;
-          description?: string;
-          describe?: string;
-        };
+        prescript?: Valueof<UserConfig>;
+        postscript?: Valueof<UserConfig>;
         env?: {
           [key: string]: string;
         };
