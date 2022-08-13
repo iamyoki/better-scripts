@@ -1,7 +1,11 @@
 <br />
-<h1 align="center">➤_ Better Scripts</h1>
+
+<h1 align="center">
+  <img src="./static/logo.png" alt="example" width="400px" />
+</h1>
 
 <br>
+
 <p align="center"><strong>A better way to organize your npm scripts</strong></p>
 <br>
 
