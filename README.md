@@ -246,9 +246,9 @@ The API is not stable yet
 
 ## Contributors
 
-[![iamyoki](./static/contributors/iamyoki.svg "iamyoki")](https://github.com/iamyoki "iamyoki")
-
-[![annoyc](./static/contributors/annoyc.svg "annoyc")](https://github.com/annoyc "annoyc")
+|                                             iamyoki                                             |                                           annoyc                                           |
+| :---------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+| [![iamyoki](./static/contributors/iamyoki.svg "iamyoki")](https://github.com/iamyoki "iamyoki") | [![annoyc](./static/contributors/annoyc.svg "annoyc")](https://github.com/annoyc "annoyc") |
 
 ## License
 
