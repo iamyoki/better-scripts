@@ -13,20 +13,20 @@
   <img src="./static/example2.png" alt="example" width="460px" />
 </p>
 
-*   [Installation](#installation)
-*   [Usage](#usage)
-    *   [Basic setup](#basic-setup)
-    *   [Add script description](#add-script-description)
-    *   [Script as object](#script-as-object)
-    *   [Separate configuration file](#separate-configuration-file)
-    *   [Specified configuration file](#specified-configuration-file)
-*   [Command line](#command-line)
-    *   [Default](#default)
-    *   [Run](#run)
-    *   [List](#list)
-*   [Advanced](#advanced)
-*   [Contributors](#contributors)
-*   [License](#license)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Basic setup](#basic-setup)
+  - [Add script description](#add-script-description)
+  - [Script as object](#script-as-object)
+  - [Separate configuration file](#separate-configuration-file)
+  - [Specified configuration file](#specified-configuration-file)
+- [Command line](#command-line)
+  - [Default](#default)
+  - [Run](#run)
+  - [List](#list)
+- [Advanced](#advanced)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Installation
 
