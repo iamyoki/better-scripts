@@ -5,6 +5,11 @@
     "command": "node scripts/generate-jsonschema.js",
     "desc": "Generate json schema file"
   },
+  "generate-contributors": {
+    "alias": "📄 Generate Contributors",
+    "command": "node scripts/generate-md-contributors.js",
+    "desc": "Generate contributors in README.md"
+  },
   "sort-config": {
     "alias": "🔮 Sort Config",
     "command": "node scripts/sort-scripts-config.js",

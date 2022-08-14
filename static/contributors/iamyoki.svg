@@ -1,0 +1,42 @@
+<svg
+      width="80"
+      height="80"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <rect id="bg" width="100%" height="100%" rx="12" ry="12" fill="white" />
+      <clipPath id="clip">
+        <use xlink:href="#bg" />
+      </clipPath>
+      <image
+        xlink:href="data:image/jpeg;base64,/9j/2wCEAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDIBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAFAAUAMBIgACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/ANGMKumrbRISscWwbSG6DHY5rsrOOMCZo3ViWXgH/a/+vWBeRRtay5RSQhwSOnFW/B+nP/ZEmpyzysJsLCrMcKNwycfX+VXVumkZrZkrQYfAkAY/wkDH+Nc9qvi3TtJnNq6+fKOqxdvrmua+IXi17S/WwsbhonWM72Q8gk9PyH615vFb395N5io7MTncetDqtKyCNFdT6J8M/E3SoreGzurea3QsQJchgMnuOo/WvSLe4tr6BZ4JEljPRlNfIqprELIJI3Yg8Z5/CvQPBHj2fS9Q2OSYJSEkiY8Ak4zWV76m7hpofQOKgnBZCAKyLPxMlzdR272zo0hADBgRW44yO2Peqaa3M009jBnj5IxVJ7ck5NXbu+0+CVkY/MDg7MY/PNUZJ7GW1nWK8cyOGVME8Z6UgOTnObeT3U/yrqLRoxoywwqAke0Ko7DcK5+e2dYJC2Pun+VaPhuSWS0IY5+UH/x5a0rdCInz5qOlXFv42v7TUCHlikLE5yDu5H6Guw0mGOJlwo59qqeNngvfHV/LHHIhVFjkx1dlLLkY9gKzLOW6tpwyi6jiAH+sIYHPoO1cc9djvo3gtUegC3juFHyrkHjiuR8SeHW0phqVpJ+7Lfvkb1J61b1W/wBU0p08sShWVT+7iDt07Z4zWhcGfVPDtzHOZcnaFaeMIQ24enBH0qYtoupZ3R2vhO4efTNJnuCBP8pYZ5xu4/TFek306W1jLNIpZVUkgelec2txZWgRVmQRoq7Dg42jpj8q09Y8fWhtZksoZZiBjc3yKc8Y55/Suyb2POju7o5mW9luLtV06NmVXJYFOMdhVW8S4j+W7DxnHRSAq56c9KZP4kuFjeG1jVdgYA9MkYXPr95v0rCu7iRpZ5mkLSFXZGznP+sK8n/djqbD2O+urlhaSO9pMqAEE7o+P/HqXR7p7ZTNklTEPlHTt2rzzxN4luJHaKK4t3icfvApyuexHPWuhbXYY7HbZu80oiQERws6jgZBOMD86bnfUlbMxPEunZ8RyasFAiuTtYDoH5P65JqhqBTEMYZV3EHk4xXQXTjUdAMzxvHKzCREYDPA4PBPUGuK1ItJJG4h85R74xXPUj7ya2Z24arzRs90d/dT2115YjeOXAAcAglDjjIovJYfsBhmuIreLchMsjBQMMD1P0rndN1Cdrcrb2kEScbzk7j+nNXNXtXurTTWuYd9nLdLuyODjoD9cn8qzS1Nqs+RFvVfFmgW1osEF5DO4jAxEGfBB6Z6evNYS+IJmVBZ6ReTjcWz5RVT6c12ls+mW7Nb2Wlww9ctGBkY57Cmz+WzDdGfn6sxyAOnauidRR0Z5jlqcb5viKdQINJs7cKPvSurNwd+SM9c89Kg/wCEe125A+0apDEg42wqTjGB6D09e1dcgmd3KrwSc7TkDJA/lUJV7gt1KHhmTBxkN3zj+Mc0cyte4c55unljVLSNIVH70ZIFelQIxFyAOCVz9Norh7zT2t9ftJAcxtL+VdbqerWWjWc013Ns3FdqDln+gpvcUdjZ02yjms7Rm8x90SAqCq9h6muS1RbQ65d2sLBDDM0e48qxB9Rxn1rLsvEV/wCJb+10jSp2tXk+VpMACJAOWJ6k49Mc4q9qGnQ6br8Wn2xJthCBEx5yRyST3JJJP1qJaLU3pR97TQvWsttbFftNwrKv/LGFdxb2J6Cm+LvFMqWFhbxxxIskhcRtxsC4wcj61Y0jR7i/nOyLZEDgyMOPw9a4j4gTonip7OBv3dpGseTzliNxP6j8qKblslZFVYRveTuz0Wz8V6Xc20cjIYJDuYFxgNjGSMdPYHmrc2oRFQPlDg4J64HtXjVjczXe5XlaKFCAcAkqo6nA616danS7yDct0xhijUvLI+CPQc5B+lZ1aUb3MHTvsaY1HcxC5XaDghc1FLfkQOI0jjLHP3Rz+XbgU3T9MbUTEYLotby52vIm3HrwOD6cGrdz4XmggjAvYwi535QsT7dayVK5PK1uX4PCejPbx6hI7zxbBKssknG3Gc9hXg3iHW313VJp33Rx7sRRHBCr2H1xXf6BdXXi34c3WjLcSLfWAM0QDY8xV6ofXrkV5dc/6wHvznAxmu5F2O3+GdiXl1G+HBji8tD75BP9K9T08A2JlKDLc1x3w1svK0Nhj5poWl/8eH9AK7GzJ/s+VO6sRUvVlD0u2hQScAZ/SvAfEF19t8R6lc7shp2wfYHH9K9l1y++y6ZcSjjy42b8hmvBVyz5zyT1poGWIpzFOCGbZkEqDw3tXplha6drdsot90LeUDtZiwz0PGeOnavMVESuIxl3YgZzwK6/SmXSrz7PG7hXjGST3Iz+VcuLuknF2Z6GXwUm1NJxNW813xL4Y+xWcNxHLYkYjBQMCAeecA8dcfj616Dp15PqNoCLmNFKgkom7GQDXET26avBYwsxU/OUYHlWyMEVHod9qOha1cxSqzWsUam4i3D5ATjcg79QeOx9qxoVlJa79fMrHYL2bvHZ7eR//9k="
+        x="0"
+        y="0"
+        clip-path="url(#clip)"
+        preserveAspectRatio="xMidYMid slice"
+        height="100%"
+        width="100%"
+      />
+      <rect width="100" height="30%" y="70%" clip-path="url(#clip)" fill="url(#textGradient)" opacity=".6" />
+      <defs>
+        <linearGradient id="textGradient">
+          <stop offset="0%" stop-color="#ef41e0" />
+          <stop offset="70%" stop-color="#105bfc" />
+        </linearGradient>
+      </defs>
+      <text
+        x="50%"
+        y="85%"
+        font-size="13"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-weight="bold"
+        font-family="PingFangSC, Myriad Pro, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif"
+        fill="white"
+      >
+        iamyoki
+      </text>
+    </svg>
+    

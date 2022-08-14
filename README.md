@@ -13,19 +13,20 @@
   <img src="./static/example2.png" alt="example" width="460px" />
 </p>
 
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Basic setup](#basic-setup)
-  - [Add script description](#add-script-description)
-  - [Script as object](#script-as-object)
-  - [Separate configuration file](#separate-configuration-file)
-  - [Specified configuration file](#specified-configuration-file)
-- [Command line](#command-line)
-  - [Default](#default)
-  - [Run](#run)
-  - [List](#list)
-- [Advanced](#advanced)
-- [License](#license)
+*   [Installation](#installation)
+*   [Usage](#usage)
+    *   [Basic setup](#basic-setup)
+    *   [Add script description](#add-script-description)
+    *   [Script as object](#script-as-object)
+    *   [Separate configuration file](#separate-configuration-file)
+    *   [Specified configuration file](#specified-configuration-file)
+*   [Command line](#command-line)
+    *   [Default](#default)
+    *   [Run](#run)
+    *   [List](#list)
+*   [Advanced](#advanced)
+*   [Contributors](#contributors)
+*   [License](#license)
 
 ## Installation
 
@@ -140,17 +141,17 @@ Create a `scripts.json` file in the root directory
 
 Supported file formats
 
-- a `better-scripts` property in package.json  (⭐️ Recommended)
-- `scripts.json`  (⭐️⭐️ Recommended)
-- `better-scripts.json`
-- `.better-scriptsrc`
-- `.better-scriptsrc.json`
-- `.better-scriptsrc.yaml`
-- `.better-scriptsrc.yml`
-- `.better-scriptsrc.js`
-- `.better-scriptsrc.cjs`
-- `better-scriptsrc.config.js`
-- `better-scriptsrc.config.cjs`
+*   a `better-scripts` property in package.json  (⭐️ Recommended)
+*   `scripts.json`  (⭐️⭐️ Recommended)
+*   `better-scripts.json`
+*   `.better-scriptsrc`
+*   `.better-scriptsrc.json`
+*   `.better-scriptsrc.yaml`
+*   `.better-scriptsrc.yml`
+*   `.better-scriptsrc.js`
+*   `.better-scriptsrc.cjs`
+*   `better-scriptsrc.config.js`
+*   `better-scriptsrc.config.cjs`
 
 ### Specified configuration file
 
@@ -213,7 +214,7 @@ Skip chaining paths
 yarn scripts run <name.name...> --skip
 ```
 
-> -s, --skip
+> \-s, --skip
 
 ### List
 
@@ -243,17 +244,16 @@ yarn scripts list <name.name...>
 
 The API is not stable yet
 
-## License
+## Contributors
 
-<svg width="100" height="100"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <clipPath id="round">
-      <rect width="100%" height="100%" rx="10" ry="10" />
-    </clipPath>
-  </defs>
-  <image clip-path="url(#round)" xlink:href="https://avatars.githubusercontent.com/u/74389358?s=200&v=4" x="0" y="0" height="100%" width="100%" />
-</svg>
+[![iamyoki](./static/contributors/iamyoki.svg "iamyoki")](https://github.com/iamyoki "iamyoki")
+
+[![annoyc](./static/contributors/annoyc.svg "annoyc")](https://github.com/annoyc "annoyc")
+
+[![iamyoki](./static/contributors/iamyoki.svg "iamyoki")](https://github.com/iamyoki "iamyoki")
+
+[![annoyc](./static/contributors/annoyc.svg "annoyc")](https://github.com/annoyc "annoyc")
+
+## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
