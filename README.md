@@ -250,10 +250,6 @@ The API is not stable yet
 
 [![annoyc](./static/contributors/annoyc.svg "annoyc")](https://github.com/annoyc "annoyc")
 
-[![iamyoki](./static/contributors/iamyoki.svg "iamyoki")](https://github.com/iamyoki "iamyoki")
-
-[![annoyc](./static/contributors/annoyc.svg "annoyc")](https://github.com/annoyc "annoyc")
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
