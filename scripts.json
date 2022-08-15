@@ -1,14 +1,14 @@
 {
   "$schema": "./lib/schema.json",
-  "generate-schema": {
-    "alias": "📄 Generate Schema",
-    "command": "node scripts/generate-jsonschema.js",
-    "desc": "Generate json schema file"
-  },
   "generate-contributors": {
     "alias": "📄 Generate Contributors",
     "command": "node scripts/generate-md-contributors.js",
     "desc": "Generate contributors in README.md"
+  },
+  "generate-schema": {
+    "alias": "📄 Generate Schema",
+    "command": "node scripts/generate-jsonschema.js",
+    "desc": "Generate json schema file"
   },
   "sort-config": {
     "alias": "🔮 Sort Config",
