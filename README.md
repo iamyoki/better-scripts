@@ -1,8 +1,6 @@
 <br />
 
-<h1 align="center">
-  <img src="./static/logo.png" alt="example" width="400px" />
-</h1>
+<h1 align="center">➤_ Better Scripts</h1>
 
 <br>
 
