@@ -17,7 +17,8 @@
 - yarn scripts run "builds.cjs" "builds.esm" -p
   - add a -p or --parallel flag to run in parallel mode
 
-
 ## Bugs
 
 - ~~`.better-scriptsrc` not working~~
+
+- scripts in prescript doesn't working

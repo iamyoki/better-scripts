@@ -14,5 +14,24 @@
     "alias": "🔮 Sort Config",
     "command": "node scripts/sort-scripts-config.js",
     "desc": "Sort and format scripts config"
+  },
+  "predev": {
+    "scripts": {
+      "port-3000": {
+        "command": "echo listen on 3000",
+        "env": {
+          "PORT": "3000"
+        }
+      },
+      "port-8000": {
+        "command": "echo listen on 8000",
+        "env": {
+          "PORT": "8000"
+        }
+      }
+    }
+  },
+  "dev": {
+    "command": "echo $PORT"
   }
 }
