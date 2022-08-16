@@ -46,17 +46,20 @@ Or install with pnpm
 pnpm add better-scripts -D
 ```
 
-Or use npx for one-time use
+Or use npx/pnpx for one-time use
 
 ```sh
+# npx
 npx better-scripts
+# pnpx
+pnpx better-scripts
 ```
 
 ## Usage
 
 ### Basic setup
 
-Simply run `npx better-scripts` will read your existing scripts, let's give it a try at first
+Simply run `npx better-scripts` or `pnpx better-scripts` will read your existing scripts, let's give it a try at first
 
 ```sh
 npx better-scripts
