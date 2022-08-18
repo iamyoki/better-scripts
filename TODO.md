@@ -20,4 +20,4 @@
 
 ## Bugs
 
-- ~~`.better-scriptsrc` not working~~
+- ~~`.better-scriptsrc` not working~~~
