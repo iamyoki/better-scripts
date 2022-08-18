@@ -11,20 +11,20 @@
   <img src="./static/example2.png" alt="example" width="460px" />
 </p>
 
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Basic setup](#basic-setup)
-  - [Add script description](#add-script-description)
-  - [Script as object](#script-as-object)
-  - [Separate configuration file](#separate-configuration-file)
-  - [Specified configuration file](#specified-configuration-file)
-- [Command line](#command-line)
-  - [Default](#default)
-  - [Run](#run)
-  - [List](#list)
-- [Advanced](#advanced)
-- [Contributors](#contributors)
-- [License](#license)
+*   [Installation](#installation)
+*   [Usage](#usage)
+    *   [Basic setup](#basic-setup)
+    *   [Add script description](#add-script-description)
+    *   [Script as object](#script-as-object)
+    *   [Separate configuration file](#separate-configuration-file)
+    *   [Specified configuration file](#specified-configuration-file)
+*   [Command line](#command-line)
+    *   [Default](#default)
+    *   [Run](#run)
+    *   [List](#list)
+*   [Advanced](#advanced)
+*   [Contributors](#contributors)
+*   [License](#license)
 
 ## Installation
 
@@ -244,9 +244,9 @@ The API is not stable yet
 
 ## Contributors
 
-|                                             iamyoki                                             |                                           annoyc                                           |
-| :---------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| [![iamyoki](./static/contributors/iamyoki.svg "iamyoki")](https://github.com/iamyoki "iamyoki") | [![annoyc](./static/contributors/annoyc.svg "annoyc")](https://github.com/annoyc "annoyc") |
+|                                             iamyoki                                             |                                           Garker                                           |                                           annoyc                                           |
+| :---------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+| [![iamyoki](./static/contributors/iamyoki.svg "iamyoki")](https://github.com/iamyoki "iamyoki") | [![Garker](./static/contributors/Garker.svg "Garker")](https://github.com/Garker "Garker") | [![annoyc](./static/contributors/annoyc.svg "annoyc")](https://github.com/annoyc "annoyc") |
 
 ## License
 

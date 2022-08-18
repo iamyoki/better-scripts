@@ -7,14 +7,15 @@ import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
 import {unified} from 'unified';
-import {visit} from 'unist-util-visit';
 import {getContributors} from './utils/getContributors.js';
+import {writeContributorsAvatar} from './utils/writeContributorsAvatar.js';
 
 const require = createRequire(import.meta.url);
 
 const md = readFileSync(require.resolve('../README.md'), 'utf8');
 
 (async () => {
+  await writeContributorsAvatar();
   const file = await unified()
     .use(remarkParse)
     .use(remarkGfm)

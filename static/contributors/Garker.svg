@@ -1,0 +1,42 @@
+<svg
+      width="80"
+      height="80"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <rect id="bg" width="100%" height="100%" rx="12" ry="12" fill="white" />
+      <clipPath id="clip">
+        <use xlink:href="#bg" />
+      </clipPath>
+      <image
+        xlink:href="data:image/jpeg;base64,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"
+        x="0"
+        y="0"
+        clip-path="url(#clip)"
+        preserveAspectRatio="xMidYMid slice"
+        height="100%"
+        width="100%"
+      />
+      <rect width="100" height="30%" y="70%" clip-path="url(#clip)" fill="url(#textGradient)" opacity=".6" />
+      <defs>
+        <linearGradient id="textGradient">
+          <stop offset="0%" stop-color="#ef41e0" />
+          <stop offset="70%" stop-color="#105bfc" />
+        </linearGradient>
+      </defs>
+      <text
+        x="50%"
+        y="85%"
+        font-size="13"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-weight="bold"
+        font-family="PingFangSC, Myriad Pro, -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif"
+        fill="white"
+      >
+        Garker
+      </text>
+    </svg>
+    
