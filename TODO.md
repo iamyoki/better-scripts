@@ -3,8 +3,8 @@
 ## Features
 
 - ~~Add pre and post~~
-- Prev and Post support env scripts ...
-- Add env
+- ~~Prev and Post support env scripts ...~~
+- ~~Add env~~
 - Add `init` command
   - Ask user whether use magic to move current scripts to config
   - Ask user where to place the config scripts: package.json ? or scripts.json ?
@@ -21,4 +21,4 @@
 
 - ~~`.better-scriptsrc` not working~~
 
-- scripts in prescript doesn't working
+- ~~scripts in prescript doesn't working~~
