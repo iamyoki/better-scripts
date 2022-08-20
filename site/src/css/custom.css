@@ -29,6 +29,16 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 } */
 
+@import url('https://rsms.me/inter/inter.css');
+body {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
 :root {
   --ifm-color-primary: #755bdc;
   --ifm-color-primary-dark: #5f41d7;
@@ -37,6 +47,7 @@
   --ifm-color-primary-light: #8b75e1;
   --ifm-color-primary-lighter: #9581e4;
   --ifm-color-primary-lightest: #b6a8ec;
+  --ifm-heading-font-family: 'Inter var', sans-serif;
 }
 
 [data-theme='dark'] {
@@ -47,4 +58,13 @@
   --ifm-color-primary-light: #bbadf4;
   --ifm-color-primary-lighter: #c9bdf7;
   --ifm-color-primary-lightest: #f2f0fd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 1000;
+  letter-spacing: -0.05em;
 }

@@ -1,31 +1,48 @@
-import React from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import {useColorMode} from '@docusaurus/theme-common';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import {useColorMode} from '@docusaurus/theme-common';
+import React from 'react';
+import {Box, Flex} from 'rebass';
 
-import styles from './index.module.css';
+import HomepageFeatures from '../components/HomepageFeatures/index';
+import {Header, Image, Main, Tagline, Title} from './styles';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
-  const {isDarkTheme} = useColorMode();
+  const {colorMode} = useColorMode();
 
   return (
-    <header className={styles.heroBanner}>
-      <div className='container'>
-        <h1 className='hero__title'>{siteConfig.title}</h1>
-        <p className='hero__subtitle'>{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+    <Header>
+      <Box>
+        <Title>{siteConfig.title}</Title>
+        <Tagline>
+          A better way to organize and run your npm scripts. <br />
+          Make redundant NPM scripts easier to read, maintain and use.
+        </Tagline>
+        <Flex style={{gap: 20}}>
           <Link
             className='button button--secondary button--lg'
-            to='/docs/intro'>
-            Get Started
+            to='/docs/intro'
+            style={{
+              background: 'linear-gradient(to right bottom, #5d3fd1, #d98df7)',
+              color: 'white',
+              border: 'none'
+            }}>
+            Get Started →
           </Link>
-        </div>
-      </div>
-    </header>
+
+          <Link
+            className='button button--secondary button--lg'
+            to='https://github.com/iamyoki/better-scripts'>
+            View on Github →
+          </Link>
+        </Flex>
+      </Box>
+      <Box minWidth={300}>
+        <Image src='/example2.png' />
+      </Box>
+    </Header>
   );
 }
 
@@ -33,20 +50,12 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      noFooter
       title={`${siteConfig.tagline}`}
-      description='A better way to organize your npm scripts'>
-      <HomepageHeader />
-      <main
-        style={{
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-        <img src='/example2.png' alt='' width={500} />
-      </main>
-      {/* <main>
+      description='A better way to organize and run your npm scripts'>
+      <Main>
+        <HomepageHeader />
         <HomepageFeatures />
-      </main> */}
+      </Main>
     </Layout>
   );
 }
