@@ -10,7 +10,7 @@ export const Header = styled.header`
 
 export const Title = styled.h1`
   font-size: 80px;
-  font-weight: 1000;
+  font-weight: 800;
   color: transparent;
   background: linear-gradient(to right bottom, #5d3fd1, #d98df7);
   -webkit-background-clip: text;
