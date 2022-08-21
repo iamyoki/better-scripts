@@ -1,18 +1,13 @@
 {
-  "$schema": "./lib/schema.json",
-  "generate-contributors": {
-    "alias": "📄 Generate Contributors",
-    "command": "node scripts/generate-md-contributors.js",
-    "desc": "Generate contributors in README.md"
+  "dev": {
+    "alias": "🌟 Dev",
+    "command": "yarn start",
+    "desc": "Start a development server"
   },
-  "generate-schema": {
-    "alias": "📄 Generate Schema",
-    "command": "node scripts/generate-jsonschema.js",
-    "desc": "Generate json schema file"
+  "build": {
+    "alias": "📦 Build",
+    "command": "yarn build",
+    "desc": "Create a production build"
   },
-  "sort-config": {
-    "alias": "🔮 Sort Config",
-    "command": "node scripts/sort-scripts-config.js",
-    "desc": "Sort and format scripts config"
-  }
+  "test": {"alias": "🧪 Test", "command": "yarn test", "desc": "Run tests"}
 }

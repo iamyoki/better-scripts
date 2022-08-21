@@ -2,46 +2,73 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Better scripts is **a better way, a CLI tool, a consistent conventional** that helps you organize and make better use of your npm scripts.
 
-## Getting Started
+## The benefits
 
-Get started by **creating a new site**.
+⚡️ Forget about reading redundant `package.json` and start doing everything you want with just **one single command**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+💅🏻 Human readable **description** and **emoji** for your scripts.
 
-### What you'll need
+🔎 **Searchable interactive CLI tool** to help you find the command you want to run faster.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+🧠 **Consistent convention** to reduce your cognitive load on different projects.
 
-## Generate a new site
+✂️ **Simplify your package.json** and separate npm scripting to another file like `scripts.json`.
 
-Generate a new Docusaurus site using the **classic template**.
+⚙️ A more powerful script runner that can inject **cross-platform envs**, execute commands in **serialized** and **parallel** way even **chaining**.
 
-The classic template will automatically be added to your project after you run the command:
+## Quick examples
 
-```bash
-npm init docusaurus@latest my-website classic
+:::tip
+
+These examples only show you how it works like, if you already know please follow [Getting Started](/docs/getting-started/installation).
+
+:::
+
+Start by one-time command `npx better-scripts`, and you will get this.
+
+<img src="/example-at-first.png" width="500" />
+
+<br /><br />
+
+Now add some descriptions for your scripts into separate `scripts.json` file in root.
+
+```json title="scripts.json"
+{
+  "dev": {
+    "alias": "🌟 Dev",
+    "command": "yarn start",
+    "desc": "Start a development server"
+  },
+  "build": {
+    "alias": "📦 Build",
+    "command": "yarn build",
+    "desc": "Create a production build"
+  },
+  "test": {
+    "alias": "🧪 Test",
+    "command": "yarn test",
+    "desc": "Run tests"
+  }
+}
+
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Run again, it's cool!
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+<img src="/example-at-then.png" width="500" />
 
-## Start your site
+<br /><br />
 
-Run the development server:
+Shows a table list for all of your scripts by running `list` command
 
-```bash
-cd my-website
-npm run start
-```
+<img src="/example-list.png" width="500" />
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+<br /><br />
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Use as a runner without interactive
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+<img src="/example-runner.png" width="500" />
