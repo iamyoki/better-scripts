@@ -20,7 +20,7 @@ function HomepageHeader() {
           A better way to organize and run your npm scripts. <br />
           Make redundant NPM scripts easier to read, maintain and use.
         </Tagline>
-        <Flex style={{gap: 20}}>
+        <Flex style={{gap: 20}} justifyContent='center'>
           <Link
             className='button button--secondary button--lg'
             to='/docs/intro'
@@ -39,9 +39,9 @@ function HomepageHeader() {
           </Link>
         </Flex>
       </Box>
-      <Box minWidth={300}>
+      {/* <Box minWidth={300}>
         <Image src='/example2.png' />
-      </Box>
+      </Box> */}
     </Header>
   );
 }

@@ -4,8 +4,11 @@ import {rgba} from 'polished';
 export const Header = styled.header`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  text-align: center;
 `;
 
 export const Title = styled.h1`
