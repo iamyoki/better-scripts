@@ -1,6 +1,6 @@
 {
   "name": "better-scripts",
-  "description": "➤_ A better way to organize your npm scripts",
+  "description": "The next level of npm scripts. An npm scripts runner. A better way to organize your npm scripts. Make redundant NPM scripts easier to read, maintain and use.",
   "version": "0.4.0",
   "type": "module",
   "bin": {
@@ -22,8 +22,9 @@
     "unist-util-visit": "^4.1.0",
     "yargs": "^17.5.1"
   },
-  "homepage": "https://better-scripts.vercel.app/",
+  "homepage": "https://better-scripts.vercel.app",
   "keywords": [
+    "better scripts",
     "cli",
     "command",
     "commandline",
