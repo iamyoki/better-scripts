@@ -23,6 +23,10 @@ Now let's remove previous.
 
 Now command `yarn xxx` in config won't work, so we need change it to real command.
 
+- `yarn start` → `react-scripts start`
+- `yarn build` → `react-scripts build`
+- `yarn test` → `react-scripts test`
+
 ```json title="scripts.json"
 {
   "dev": {
