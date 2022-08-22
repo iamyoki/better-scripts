@@ -51,6 +51,10 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   ${size(240)}
   object-fit: contain;
+
+  @media screen and (max-width: 996px) {
+    ${size(180)}
+  }
 `;
 
 function Feature({img, title, description}) {

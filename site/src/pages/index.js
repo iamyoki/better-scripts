@@ -4,9 +4,17 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import React from 'react';
 import {Box, Flex} from 'rebass';
+import {css} from '@emotion/react';
 
 import HomepageFeatures from '../components/HomepageFeatures/index';
-import {Caption, Header, Image, Main, Tagline, Title} from './styles';
+import {
+  Caption,
+  Header,
+  Image,
+  Main,
+  Tagline,
+  Title
+} from '../components/components';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -22,7 +30,18 @@ function HomepageHeader() {
           A better way to organize your npm scripts. <br />
           Make redundant NPM scripts easier to read, maintain and use.
         </Tagline>
-        <Flex style={{gap: 20}} justifyContent='center'>
+        <Flex
+          style={{gap: 20}}
+          justifyContent='center'
+          flexWrap='wrap'
+          css={css`
+            @media screen and (max-width: 996px) {
+              .button {
+                font-size: 14px;
+                padding: 8px 12px;
+              }
+            }
+          `}>
           <Link
             className='button button--secondary button--lg'
             to='/docs/intro'
