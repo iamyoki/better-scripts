@@ -84,7 +84,7 @@ import TabItem from '@theme/TabItem';
 | scripts                         | `Config`: object   | Nested child scripts. Run step by step                                                       |          |
 | prescript                       | `Config`: `Script` | Pre-runs. [Same as npm.](https://docs.npmjs.com/cli/v8/using-npm/scripts#pre--post-scripts)  |          |
 | postscript                      | `Config`: `Script` | Post-runs. [Same as npm.](https://docs.npmjs.com/cli/v8/using-npm/scripts#pre--post-scripts) |          |
-| env                             | `Env`: object      | Cross-platform environment virables                                               |          |
+| env                             | `Env`: object      | Cross-platform environment virables                                                          |          |
 
 <details>
 <summary>TS Interface</summary>
