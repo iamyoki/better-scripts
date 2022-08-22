@@ -71,7 +71,7 @@ const config = {
             position: 'left',
             label: 'Docs'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/iamyoki/better-scripts',
             label: 'GitHub',
@@ -108,15 +108,15 @@ const config = {
           //     },
           //   ],
           // },
-          {
-            title: 'Blogs',
-            items: [
-              {
-                label: 'Example',
-                to: '/example'
-              }
-            ]
-          },
+          // {
+          //   title: 'Blogs',
+          //   items: [
+          //     {
+          //       label: 'Example',
+          //       to: '/example'
+          //     }
+          //   ]
+          // },
           {
             title: 'More',
             items: [
