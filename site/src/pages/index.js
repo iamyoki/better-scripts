@@ -16,7 +16,7 @@ function HomepageHeader() {
     <Header>
       <Box>
         <Title>{siteConfig.title}</Title>
-        <Caption>The next level of npm scripts runner</Caption>
+        <Caption>The next level of npm scripts</Caption>
         <Tagline>
           A better way to organize and run your npm scripts. <br />
           Make redundant NPM scripts easier to read, maintain and use.
