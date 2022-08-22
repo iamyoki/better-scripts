@@ -5,11 +5,12 @@ sidebar_position: 2
 # Installation
 
 :::tip
-`better-scripts` is recommend to be installed as a dev dependency. The following instructon will use `yarn` as default pacakge manager, you can `npm` or `pnpm` whatever you want.
+The following instruction will use `yarn` as default pacakge manager, you can use `npm` or `pnpm` instead.
 :::
 
 ## Install locally
 
+`better-scripts` is recommend to be installed as a **dev** dependency.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

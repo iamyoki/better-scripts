@@ -1,10 +1,8 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
 import styled from '@emotion/styled';
+import clsx from 'clsx';
 import {size} from 'polished';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import {useColorMode} from '@docusaurus/theme-common';
+import React from 'react';
+import styles from './styles.module.css';
 
 const FeatureList = [
   {
