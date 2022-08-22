@@ -18,7 +18,8 @@ function HomepageHeader() {
         <Title>{siteConfig.title}</Title>
         <Caption>The next level of npm scripts</Caption>
         <Tagline>
-          A better way to organize and run your npm scripts. <br />
+          An npm scripts runner. <br />
+          A better way to organize your npm scripts. <br />
           Make redundant NPM scripts easier to read, maintain and use.
         </Tagline>
         <Flex style={{gap: 20}} justifyContent='center'>
