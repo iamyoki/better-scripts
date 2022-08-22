@@ -5,6 +5,7 @@
 <br>
 
 <p align="center"><strong>A better way to organize your npm scripts</strong></p>
+<p align="center"><a href="https://better-scripts.vercel.app/" target='_blank'>See <u>better-scripts.vercel.app</u> →</a></p>
 <br>
 
 <p align="center">
