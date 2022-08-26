@@ -18,7 +18,7 @@ Better scripts is **a better way, a CLI tool, a consistent conventional** that h
 
 ✂️ **Simplify your package.json** and separate npm scripting to another file like `scripts.json`.
 
-⚙️ A more powerful script runner that can inject **cross-platform envs**, execute commands in **serialized** and **parallel** way even **chaining**.
+⚙️ A more powerful **script runner** that can inject **cross-platform envs**, execute commands in **serialized** and **parallel** way even **chaining**.
 
 ## Quick examples
 
