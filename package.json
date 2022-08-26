@@ -1,7 +1,7 @@
 {
   "name": "better-scripts",
   "description": "The next level of npm scripts. An npm scripts runner. A better way to organize your npm scripts. Make redundant NPM scripts easier to read, maintain and use.",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "type": "module",
   "bin": {
     "better-scripts": "bin/better-scripts.js"
